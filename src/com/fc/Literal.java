@@ -9,7 +9,7 @@ public class Literal {
         isInferred=false;
     }
 
-    public void Print(){
+    public void print(){
         System.out.println(name);
     }
     public boolean isInferred() {
