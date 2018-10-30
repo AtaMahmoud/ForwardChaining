@@ -10,15 +10,25 @@ public class Literal {
     }
 
     public void print(){
-        System.out.println(name);
+        System.out.print(name);
     }
     public boolean isInferred() {
         return isInferred;
     }
-    public void setInferred(boolean inferred) {
-        isInferred = inferred;
+    public void setInferred() {
+        isInferred = true;
     }
     public String getName() {
         return name;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        Literal literal=(Literal)obj;
+
+        if (literal.getName().compareTo(this.name)==0)
+            return true;
+        else
+            return false;
     }
 }
