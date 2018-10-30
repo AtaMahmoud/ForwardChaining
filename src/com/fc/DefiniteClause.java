@@ -37,9 +37,9 @@ public class DefiniteClause {
             Literal literal=iterator.next();
             literal.print();
             if (iterator.hasNext())
-                System.out.println(" /\\ ");
+                System.out.print(" /\\ ");
             else
-                System.out.println(" => ");
+                System.out.print(" => ");
         }
         this.head.print();
     }
