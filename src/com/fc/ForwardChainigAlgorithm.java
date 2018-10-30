@@ -9,6 +9,7 @@ public class ForwardChainigAlgorithm {
     Literal provetion;
     DefiniteClauseKB kb;
     Scanner input = new Scanner(System.in);
+    public boolean isEntail;
 
     public ForwardChainigAlgorithm(String query) {
         kb = parseToDefiniteClauseKB(query);
@@ -57,12 +58,13 @@ public class ForwardChainigAlgorithm {
         return kb;
     }
 
-    public boolean FcEntails(DefiniteClauseKB KB, Literal q) {
+    private boolean FcEntails(DefiniteClauseKB KB, Literal q) {
         Stack<Literal> agenda = initAgenda(KB);
 
 
         if (agenda.contains(q)) {
             System.out.println("The given statement is a fact of the knowledge base.");
+            isEntail=true;
             return true;
         }
 
@@ -79,7 +81,7 @@ public class ForwardChainigAlgorithm {
                     if (definiteClause.getPremises().contains(literal)) {
                         definiteClause.decrementCount();
                         if (definiteClause.getCount() == 0) {
-                            System.out.println("Rule triggered: ");
+                            System.out.println("Rule Fired: ");
                             definiteClause.print();
 
                             System.out.print("\nNew fact: ");
@@ -87,8 +89,11 @@ public class ForwardChainigAlgorithm {
                             System.out.println();
 
 
-                            if (definiteClause.getHead().equals(q))
+                            if (definiteClause.getHead().equals(q)){
+                                isEntail=true;
                                 return true;
+                            }
+
 
                             agenda.push(definiteClause.getHead());
 
@@ -98,11 +103,11 @@ public class ForwardChainigAlgorithm {
             }
 
         }
-
+        isEntail=false;
         return false;
     }
 
-    public Stack<Literal> initAgenda(DefiniteClauseKB KB) {
+    private Stack<Literal> initAgenda(DefiniteClauseKB KB) {
         Stack<Literal> agenda = new Stack<Literal>();
 
         Iterator<DefiniteClause> iterator = KB.getIterator();

@@ -22,7 +22,7 @@ public class Literal {
         return name;
     }
 
-    @Override
+   @Override
     public boolean equals(Object obj) {
         Literal literal=(Literal)obj;
 

@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class DefiniteClauseKB {
-    public List<DefiniteClause> clauses = new ArrayList<DefiniteClause>();
+    private List<DefiniteClause> clauses = new ArrayList<DefiniteClause>();
 
     public List<DefiniteClause> getDefiniteClauses() {
         return clauses;
