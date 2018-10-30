@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5e5ec065-e94d-43c0-a0d5-80bad4e7cac8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/com/fc/ForwardChainigAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fc/ForwardChainigAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fc/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/fc/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="120">
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -26,8 +27,8 @@
       <file leaf-file-name="Literal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/fc/Literal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="129">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="29" />
               <folding>
                 <element signature="e#246#247#0" expanded="true" />
                 <element signature="e#282#283#0" expanded="true" />
@@ -45,8 +46,8 @@
       <file leaf-file-name="DefiniteClause.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/fc/DefiniteClause.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+            <state relative-caret-position="221">
+              <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#360#361#0" expanded="true" />
@@ -64,16 +65,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForwardChainigAlgorithm.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ForwardChainigAlgorithm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/fc/ForwardChainigAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
+            <state relative-caret-position="88">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
-                <element signature="e#620#621#0" expanded="true" />
                 <element signature="method#parseToDefiniteClauseKB#0;class#ForwardChainigAlgorithm#0" />
+                <element signature="method#initAgenda#0;class#ForwardChainigAlgorithm#0" />
+                <element signature="e#1940#1949#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,6 +114,7 @@
         <option value="$PROJECT_DIR$/src/com/fc/DefiniteClauseKB.java" />
         <option value="$PROJECT_DIR$/src/com/fc/DefiniteClause.java" />
         <option value="$PROJECT_DIR$/src/com/fc/ForwardChainigAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/com/fc/Main.java" />
       </list>
     </option>
   </component>
@@ -203,6 +205,11 @@
       <envs />
       <method />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -215,12 +222,12 @@
       <option name="presentableId" value="Default" />
       <updated>1540848863157</updated>
       <workItem from="1540848867928" duration="1016000" />
-      <workItem from="1540856356594" duration="2989000" />
+      <workItem from="1540856356594" duration="3790000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4005000" />
+    <option name="totallyTimeSpent" value="4806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -290,34 +297,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fc/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/fc/DefiniteClauseKB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fc/Literal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="88">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="29" />
           <folding>
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#154#170#0" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/fc/DefiniteClause.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+        <state relative-caret-position="221">
+          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#360#361#0" expanded="true" />
@@ -334,29 +330,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fc/DefiniteClauseKB.java">
+    <entry file="file://$PROJECT_DIR$/src/com/fc/Literal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="29" />
+        <state relative-caret-position="129">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#154#170#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/fc/ForwardChainigAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
+        <state relative-caret-position="88">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
             <element signature="method#parseToDefiniteClauseKB#0;class#ForwardChainigAlgorithm#0" />
+            <element signature="method#initAgenda#0;class#ForwardChainigAlgorithm#0" />
+            <element signature="e#1940#1949#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fc/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
         </state>
       </provider>
     </entry>

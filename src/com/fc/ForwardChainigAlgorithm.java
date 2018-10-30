@@ -30,7 +30,44 @@ public class ForwardChainigAlgorithm {
         }
     }
 
-    private boolean FcEntails(DefiniteClauseKB kb, Literal provetion) {
+    public boolean FcEntails(DefiniteClauseKB kb, Literal provetion) {
+        Stack<Literal> agenda=initAgenda(kb);
+
+        if (agenda.contains(provetion)){
+            System.out.println("The Given Provetion Literal is a fact at KB");
+            return true;
+        }
+        while (!agenda.isEmpty()){
+            Literal literal=agenda.pop();
+            if (!literal.isInferred()){
+                provetion.setInferred(true);
+
+                Iterator<DefiniteClause>iterator=kb.getIterator();
+                while (iterator.hasNext()){
+                    DefiniteClause definiteClause=iterator.next();
+
+                    if (definiteClause.getPremises().contains(literal)){
+                        definiteClause.decrementCount();
+
+                        if (definiteClause.getCount()==0){
+                            System.out.println("Rule triggered: ");
+                            definiteClause.print();
+
+                            //print
+                            System.out.print("\nNew fact: ");
+                            definiteClause.getHead().print();
+                            System.out.println();
+
+
+                            if(definiteClause.getHead().equals(literal))
+                                return true;
+
+                            agenda.push(definiteClause.getHead());
+                        }
+                    }
+                }
+            }
+        }
         return false;
     }
 
